@@ -67,7 +67,6 @@ public class GraphDrawer extends JPanel {
             double label = minGrader + i * (maxGrader - minGrader) / 10;
             imgGraphics.drawString(String.format("%.2f", label), 5, y + 5); // label
         }
-
         // Draw the data points on the BufferedImage's Graphics2D context
         imgGraphics.setColor(Color.RED);
         for (int i = 0; i < dataPoints.size() - 1; i++) {
