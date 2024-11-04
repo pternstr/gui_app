@@ -10,7 +10,6 @@ package gui3_app;
 
 import javax.swing.*;
 
-//import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.*;
@@ -105,67 +104,6 @@ public class HelloGUI {
         frame.setVisible(true);
     }
 
-    /*
-     * private void createAndShowGUI() {
-     * // Create the frame
-     * JFrame frame = new JFrame("Hello World GUI");
-     * JPanel panel = new JPanel();
-     * panel.setLayout(null); // Set layout to null for absolute positioning
-     * 
-     * inputField1 = new JTextField(10);
-     * inputField1.setText("5");
-     * inputField2 = new JTextField(10);
-     * inputField2.setText("10");
-     * inputField3 = new JTextField(10);
-     * inputField3.setText("15");
-     * inputField4 = new JTextField(10);
-     * inputField4.setText("7.5");
-     * 
-     * JButton calButton = new JButton("Calculate");
-     * calButton.addActionListener(new ActionListener() {
-     * 
-     * @Override
-     * public void actionPerformed(ActionEvent e) {
-     * calculate();
-     * }
-     * });
-     * 
-     * // Set bounds for each component
-     * JLabel label1 = new JLabel("Ange dim. effekt (kw):");
-     * label1.setBounds(10, 10, 150, 25);
-     * panel.add(label1);
-     * inputField1.setBounds(200, 10, 150, 25);
-     * panel.add(inputField1);
-     * 
-     * JLabel label2 = new JLabel("Ange temp inomhus (degC):");
-     * label2.setBounds(10, 45, 150, 25);
-     * panel.add(label2);
-     * inputField2.setBounds(200, 45, 150, 25);
-     * panel.add(inputField2);
-     * 
-     * JLabel label3 = new JLabel("Enter Number 3:");
-     * label3.setBounds(10, 80, 150, 25);
-     * panel.add(label3);
-     * inputField3.setBounds(200, 80, 150, 25);
-     * panel.add(inputField3);
-     * 
-     * JLabel label4 = new JLabel("Ange årsmedel temperatur:");
-     * label4.setBounds(10, 115, 150, 25);
-     * panel.add(label4);
-     * inputField4.setBounds(200, 115, 150, 25);
-     * panel.add(inputField4);
-     * 
-     * calButton.setBounds(100, 150, 120, 30);
-     * panel.add(calButton);
-     * 
-     * frame.add(panel);
-     * frame.setSize(350, 250);
-     * frame.setLocationRelativeTo(null);
-     * frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-     * frame.setVisible(true);
-     * }
-     */
-
     private void calculate() {
         // Get input values from the text fields
 
@@ -181,8 +119,6 @@ public class HelloGUI {
         float gradtimmar = calc.getGradtimmar();
         JOptionPane.showMessageDialog(null, "temp är: " + grader);
         JOptionPane.showMessageDialog(null, "gradtimmar är: " + gradtimmar);
-
-        // JOptionPane.showMessageDialog(null, "The sum is: " + sum);
     }
 }
 
