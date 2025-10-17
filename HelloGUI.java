@@ -98,7 +98,7 @@ public class HelloGUI {
         panel.add(calButton, gbc);
 
         frame.add(panel);
-        frame.setSize(350, 250);
+        frame.setSize(550, 350);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
@@ -107,8 +107,8 @@ public class HelloGUI {
     private void calculate() {
         // Get input values from the text fields
 
-        int num1 = Integer.parseInt(inputField1.getText());
-        int num2 = Integer.parseInt(inputField2.getText());
+        float dim_effekt_ = Float.parseFloat(inputField1.getText());
+        float temp_inne_ = Float.parseFloat(inputField2.getText());
         int num3 = Integer.parseInt(inputField3.getText());
         float mtemp = Float.parseFloat(inputField4.getText());
 
